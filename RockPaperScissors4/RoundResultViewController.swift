@@ -4,7 +4,7 @@ import UIKit
 
 
 class RoundResultViewController: UIViewController, GameViewDelegate{
-    
+
     @IBOutlet weak var roundField: UILabel!
     @IBOutlet weak var resultField: UILabel!
     @IBOutlet weak var playBtn: UIButton!
@@ -36,7 +36,6 @@ class RoundResultViewController: UIViewController, GameViewDelegate{
         displayRoundResult(playerChoice, aiChoice, roundResultText)
         
         setButton(extraRound)
-        
     }
     
     

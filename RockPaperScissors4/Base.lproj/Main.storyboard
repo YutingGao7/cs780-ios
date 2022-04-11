@@ -82,33 +82,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPO-gf-L4x">
-                                <rect key="frame" x="172.66666666666666" y="411.66666666666669" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zL-6y-LyR">
                                 <rect key="frame" x="164" y="629" width="62" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
+                                <rect key="frame" x="75" y="181" width="240" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6zL-6y-LyR" firstAttribute="centerX" secondItem="uPO-gf-L4x" secondAttribute="centerX" id="Fkw-lX-dGY"/>
                             <constraint firstItem="6zL-6y-LyR" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="164" id="VEQ-Gr-Sh2"/>
-                            <constraint firstItem="uPO-gf-L4x" firstAttribute="centerX" secondItem="qMY-dq-p2B" secondAttribute="centerX" id="fiy-OM-B51"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="6zL-6y-LyR" secondAttribute="bottom" constant="150" id="gUb-Tv-3SL"/>
-                            <constraint firstItem="uPO-gf-L4x" firstAttribute="centerY" secondItem="qMY-dq-p2B" secondAttribute="centerY" id="uKM-uk-Que"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9WS-c4-uW7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7P-ov-F3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="808"/>
+            <point key="canvasLocation" x="710.76923076923072" y="807.58293838862551"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="wXm-nl-leP">
@@ -320,6 +316,9 @@
                                 <rect key="frame" x="222.33333333333334" y="572" width="92.666666666666657" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Quit Game"/>
+                                <connections>
+                                    <action selector="quitePressed:" destination="B8S-LG-6Gz" eventType="touchUpInside" id="gTi-q9-NwT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="38M-oH-6wq"/>

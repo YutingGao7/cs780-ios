@@ -8,7 +8,13 @@ protocol FinalResultViewDelegate: AnyObject {
 
 class FinalResultViewController: UIViewController{
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     @IBOutlet weak var greeting: UILabel!
+    
+    var totalWins: Int16 = 0
+    var totalTies: Int16 = 0
+    var totalLosses: Int16 = 0
     
     //weak var delegate: RoundResultViewController? = nil
     var greetingText: String = ""
@@ -27,6 +33,17 @@ class FinalResultViewController: UIViewController{
     }
     
     
+    @IBAction func quitePressed(_ sender: Any) {
+        let newScore = UserScore(context: context)
+        newScore.wins = totalWins
+        newScore.ties = totalTies
+        newScore.losses = totalLosses
+        
+        do {
+            try context.save()
+        } catch {
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
