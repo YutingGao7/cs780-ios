@@ -80,12 +80,12 @@ class GameInfo {
     }
     
     //returns gameResult and aiChoice, also updates historyText
-    func getGameResult() -> (String, String, Bool) {
+    func getGameResult() -> (Int, String, String, Bool) {
         let roundResult: Int, aiChoice: String
         (roundResult,aiChoice) = playGame()
         let roundResultText: String = decodeToResultText(roundResult)
         let needTieBreaker: Bool = needTieBreaker(roundResult)
-        return (roundResultText, aiChoice, needTieBreaker)
+        return (roundResult, roundResultText, aiChoice, needTieBreaker)
     }
     
     private func updateHistoryInfo(_ resultInt: Int){

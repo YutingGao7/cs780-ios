@@ -3,7 +3,7 @@ import UIKit
 
 
 
-class RoundResultViewController: UIViewController, GameViewDelegate{
+class RoundResultViewController: UIViewController, GameViewDelegate, FinalResultViewDelegate{
 
     @IBOutlet weak var roundField: UILabel!
     @IBOutlet weak var resultField: UILabel!
@@ -11,6 +11,9 @@ class RoundResultViewController: UIViewController, GameViewDelegate{
     @IBOutlet weak var scoreBtn: UIButton!
     
     let game = GameInfo()
+    let gameRecording = GameAggregate()
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     //when play pressed, initiate gameView, set delegate, and display
     @IBAction func playPressed (_ sender: UIButton) {
@@ -29,13 +32,25 @@ class RoundResultViewController: UIViewController, GameViewDelegate{
     //this function is called when the helper finishes the work
     func playerChoiceSet(_ playerChoice: String){
         game.setPlayerInt(playerChoice)
-        let roundResultText: String, aiChoice: String, extraRound: Bool
-        (roundResultText, aiChoice, extraRound) = game.getGameResult()
+        let roundInt: Int, roundResultText: String, aiChoice: String, extraRound: Bool
+        (roundInt, roundResultText, aiChoice, extraRound) = game.getGameResult()
         
         displayRound(game.getPreviousRound())
         displayRoundResult(playerChoice, aiChoice, roundResultText)
         
         setButton(extraRound)
+        
+        
+        switch roundInt {
+        case 1:
+            gameRecording.recordWin()
+        case 0:
+            gameRecording.recordTie()
+        case -1:
+            gameRecording.recordLose()
+        default:
+            print("error! un-recognized round result int: \(roundInt)")
+        }
     }
     
     
@@ -72,7 +87,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(segue.destination)
+        //print(segue.destination)
         if let finalResultVC = segue.destination as? FinalResultViewController {
             //finalResultVC.delegate = self
             if(game.getFinalResultInt() == 1) {
@@ -92,12 +107,24 @@ class RoundResultViewController: UIViewController, GameViewDelegate{
         scoreBtn.isHidden = true;
     }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("view will appear")
-        //resultField.isHidden = true;
-        //roundField.isHidden = true;
-        //scoreBtn.isHidden = true;
+    func storeScore(){
+        print("storing score")
+        let newScore = UserScore(context: context)
+        var winNum: Int, tieNum: Int, lossNum: Int
+        (winNum, tieNum, lossNum) = gameRecording.getUserScores()
+        newScore.wins = Int32(winNum)
+        newScore.ties = Int32(tieNum)
+        newScore.losses = Int32(lossNum)
+        
+        //(newScore.wins, newScore.ties, newScore.losses) = Int32(gameRecording.getUserScores())
+        print(gameRecording.getUserScores())
+
+        do {
+            try context.save()
+        } catch {
+        }
+        
     }
+    
+    
 }
