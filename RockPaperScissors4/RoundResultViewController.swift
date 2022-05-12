@@ -66,7 +66,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     }
     
     func displayRoundResult(_ playerChoice: String, _ aiChoice: String, _ roundResultText: String){
-        resultField.text = "You: \(playerChoice) \nAI: \(aiChoice)\nResult: \(roundResultText)"
+        resultField.text = "You: \(playerChoice) \nPhone: \(aiChoice)\nResult: \(roundResultText)"
         resultField.isHidden = false;
     }
     

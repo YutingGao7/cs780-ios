@@ -47,6 +47,13 @@
                                     <action selector="onClickHelp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mlu-3r-zpa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By Yuting Gao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVH-5l-1gJ">
+                                <rect key="frame" x="273" y="740" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,22 +90,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zL-6y-LyR">
-                                <rect key="frame" x="164" y="580" width="62" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
-                                <rect key="frame" x="75" y="181" width="240" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
+                                <rect key="frame" x="30" y="168" width="330" height="513"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6zL-6y-LyR" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="164" id="VEQ-Gr-Sh2"/>
-                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="6zL-6y-LyR" secondAttribute="bottom" constant="150" id="gUb-Tv-3SL"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="30" id="SOM-A8-E79"/>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="30" id="Xs1-UU-r9n"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="80" id="ZdS-sj-DM1"/>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="80" id="xLp-FF-WZh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="crown" catalog="system" id="AhO-bw-fcZ"/>
@@ -116,34 +119,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9p-HO-mwa">
-                                <rect key="frame" x="177" y="411.66666666666669" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skq-PF-buL">
-                                <rect key="frame" x="164" y="580" width="62" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pug-bm-6Qk">
+                                <rect key="frame" x="27" y="88" width="336" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Introduction
+Rock Paper Scissors! is an ios based application that is developed by Yuting Gao -- a graduate student in SFSU as part of the term project in CSC780.
+
+Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. 
+
+Rules
+A simultaneous, zero-sum game, it has three possible outcomes: a tie, a win or a loss. If two players have the same choices, then a tie occurs. Otherwise, the general rules are:
+Rock defeats Scissors
+Scissors defeats Paper
+Paper defeats Rock
+In this IOS game, the player is playing aganst a randomly generated opponent. If players fail to make decision within 3 seconds, they automatically lost this round.
+
+Implication
+Rock Paper Scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision. Unlike truly random selection methods, however, rock paper scissors can be played with a degree of skill by recognizing and exploiting non-random behavior in opponents.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LJV-Qv-c1K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="skq-PF-buL" firstAttribute="centerX" secondItem="r9p-HO-mwa" secondAttribute="centerX" id="EWN-il-NRs"/>
-                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="bottom" secondItem="skq-PF-buL" secondAttribute="bottom" constant="150" id="G07-NH-764"/>
-                            <constraint firstItem="skq-PF-buL" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="164" id="Lf6-ms-DR7"/>
-                            <constraint firstItem="r9p-HO-mwa" firstAttribute="centerY" secondItem="PgF-xo-E8f" secondAttribute="centerY" id="Y94-iN-iDP"/>
-                            <constraint firstItem="r9p-HO-mwa" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="nij-9l-bYV"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="doc.text.magnifyingglass" catalog="system" id="WcG-2C-HW5"/>
                     <navigationItem key="navigationItem" id="pui-BL-zBQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxK-la-A9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="1016"/>
+            <point key="canvasLocation" x="533.84615384615381" y="1015.8767772511848"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="1ao-xd-WXS">
@@ -296,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7N-dH-KZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008" y="-665"/>
+            <point key="canvasLocation" x="2937" y="-591"/>
         </scene>
         <!--Round Result View Controller-->
         <scene sceneID="aom-Wc-xTF">
@@ -469,8 +476,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="axS-36-yv3"/>
-        <segue reference="Zie-lo-RsV"/>
+        <segue reference="fKO-3A-2gc"/>
+        <segue reference="GP1-3v-P8o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="crown" catalog="system" width="128" height="92"/>
@@ -479,6 +486,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
