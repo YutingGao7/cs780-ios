@@ -13,7 +13,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     
     
     let game = GameInfo()
-    let gameRecording = GameAggregate()
+    //let gameRecording = GameAggregate()
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -45,11 +45,11 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         
         switch roundInt {
         case 1:
-            gameRecording.recordWin()
+            GameAggregate.recordWin()
         case 0:
-            gameRecording.recordTie()
+            GameAggregate.recordTie()
         case -1:
-            gameRecording.recordLose()
+            GameAggregate.recordLose()
         default:
             print("error! un-recognized round result int: \(roundInt)")
         }
@@ -117,18 +117,20 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         print("storing score")
         let newScore = UserScore(context: context)
         var winNum: Int, tieNum: Int, lossNum: Int
-        (winNum, tieNum, lossNum) = gameRecording.getUserScores()
+        (winNum, tieNum, lossNum) = GameAggregate.getUserScores()
         newScore.wins = Int16(winNum)
         newScore.ties = Int16(tieNum)
         newScore.losses = Int16(lossNum)
         
         //(newScore.wins, newScore.ties, newScore.losses) = Int32(gameRecording.getUserScores())
-        print(gameRecording.getUserScores())
+        //print(GameAggregate.getUserScores())
 
         do {
             try context.save()
         } catch {
         }
+        
+        GameAggregate.reset()
         
     }
     

@@ -12,13 +12,9 @@ import UIKit
 class RecordViewController: UIViewController{
     
     @IBOutlet weak var userNameInput: UITextField!
-    
     @IBOutlet weak var prompt: UILabel!
-    
     @IBOutlet weak var confirmNameBtn: UIButton!
-    
     @IBOutlet weak var viewScoreBtn: UIButton!
-    
     @IBOutlet weak var playerName: UILabel!
     
     @IBAction func onConfirmName(_ sender: Any) {
