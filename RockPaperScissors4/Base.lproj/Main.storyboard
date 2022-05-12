@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nO4-MS-ilp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2B6-Rk-hDH">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -72,9 +73,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166.1538461538462" y="113.74407582938387"/>
+            <point key="canvasLocation" x="2095.3846153846152" y="113.74407582938387"/>
         </scene>
-        <!--Score View Controller-->
+        <!--Score-->
         <scene sceneID="zPN-vI-0iY">
             <objects>
                 <viewController id="rQE-9T-JaP" customClass="ScoreViewController" customModule="RockPaperScissors4" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zL-6y-LyR">
-                                <rect key="frame" x="164" y="629" width="62" height="31"/>
+                                <rect key="frame" x="164" y="580" width="62" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                             </button>
@@ -100,13 +101,14 @@
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="6zL-6y-LyR" secondAttribute="bottom" constant="150" id="gUb-Tv-3SL"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Score" image="crown" catalog="system" id="AhO-bw-fcZ"/>
                     <navigationItem key="navigationItem" id="9WS-c4-uW7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7P-ov-F3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="923"/>
+            <point key="canvasLocation" x="2063" y="1035"/>
         </scene>
-        <!--Help View Controller-->
+        <!--Help-->
         <scene sceneID="wXm-nl-leP">
             <objects>
                 <viewController id="Skv-XL-rAi" customClass="HelpViewController" customModule="RockPaperScissors4" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,7 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skq-PF-buL">
-                                <rect key="frame" x="164" y="629" width="62" height="31"/>
+                                <rect key="frame" x="164" y="580" width="62" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                             </button>
@@ -136,11 +138,12 @@
                             <constraint firstItem="r9p-HO-mwa" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="nij-9l-bYV"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Help" image="doc.text.magnifyingglass" catalog="system" id="WcG-2C-HW5"/>
                     <navigationItem key="navigationItem" id="pui-BL-zBQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxK-la-A9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="843"/>
+            <point key="canvasLocation" x="535" y="1016"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="1ao-xd-WXS">
@@ -213,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyf-0Z-uKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661.5384615384614" y="113.74407582938387"/>
+            <point key="canvasLocation" x="4590.7692307692305" y="113.74407582938387"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="2uT-mF-0hU">
@@ -288,7 +291,7 @@
                     <connections>
                         <outlet property="gameHistory" destination="5xY-ME-Ftl" id="VEl-aU-ZDX"/>
                         <outlet property="roundField" destination="jci-P2-vD4" id="pEE-uL-5Na"/>
-                        <outlet property="timer" destination="VKB-0u-lmm" id="XUJ-tn-wrA"/>
+                        <outlet property="timerField" destination="VKB-0u-lmm" id="XUJ-tn-wrA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7N-dH-KZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -315,7 +318,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-8B-Q7x">
-                                <rect key="frame" x="169.66666666666666" y="509" width="51" height="31"/>
+                                <rect key="frame" x="169.66666666666666" y="460" width="51" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play"/>
                                 <connections>
@@ -329,16 +332,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-yM-Pow">
-                                <rect key="frame" x="150" y="509" width="90" height="31"/>
+                                <rect key="frame" x="150" y="460" width="90" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="See Score"/>
                                 <connections>
                                     <action selector="scorePressed:" destination="LwW-xg-XkZ" eventType="touchUpInside" id="zhU-Le-Hmw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DY-QB-rph">
-                                <rect key="frame" x="83" y="611" width="219" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DY-QB-rph">
+                                <rect key="frame" x="167.66666666666666" y="640.66666666666663" width="54.666666666666657" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -349,10 +351,12 @@
                         <constraints>
                             <constraint firstItem="fvv-4y-k8a" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="6L4-AV-bEt"/>
                             <constraint firstItem="fvv-4y-k8a" firstAttribute="top" secondItem="cEt-NM-CXD" secondAttribute="top" constant="30" id="8JD-qa-yUI"/>
+                            <constraint firstItem="7DY-QB-rph" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="Acp-z3-ymn"/>
                             <constraint firstItem="HgO-Ns-3he" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="D9B-60-m8f"/>
                             <constraint firstItem="4o8-yM-Pow" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="FNr-kV-7fI"/>
                             <constraint firstItem="cEt-NM-CXD" firstAttribute="bottom" secondItem="4o8-yM-Pow" secondAttribute="bottom" constant="270" id="GZP-n7-iTD"/>
                             <constraint firstItem="cEt-NM-CXD" firstAttribute="bottom" secondItem="bkW-8B-Q7x" secondAttribute="bottom" constant="270" id="Gg6-N8-x9i"/>
+                            <constraint firstItem="cEt-NM-CXD" firstAttribute="bottom" secondItem="7DY-QB-rph" secondAttribute="bottom" constant="100" id="Gtz-ON-AHC"/>
                             <constraint firstItem="bkW-8B-Q7x" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="Qg1-jb-Pdc"/>
                             <constraint firstItem="HgO-Ns-3he" firstAttribute="centerY" secondItem="9Fg-OQ-AfW" secondAttribute="centerY" id="z0T-Ih-pD1"/>
                         </constraints>
@@ -369,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snU-8Z-d9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007.6923076923076" y="113.74407582938387"/>
+            <point key="canvasLocation" x="2936.9230769230767" y="113.74407582938387"/>
         </scene>
         <!--Final Result View Controller-->
         <scene sceneID="hch-Z0-ENg">
@@ -386,7 +390,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-Vh-DiU">
-                                <rect key="frame" x="75" y="592" width="91" height="31"/>
+                                <rect key="frame" x="75" y="543" width="91" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play Again"/>
                                 <connections>
@@ -394,7 +398,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-zw-Nvs">
-                                <rect key="frame" x="222.33333333333334" y="592" width="92.666666666666657" height="31"/>
+                                <rect key="frame" x="222.33333333333334" y="543" width="92.666666666666657" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Quit Game"/>
                                 <connections>
@@ -422,12 +426,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o59-j4-qUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876.9230769230767" y="113.74407582938387"/>
+            <point key="canvasLocation" x="3806.1538461538462" y="113.74407582938387"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="4K4-w5-6LR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nO4-MS-ilp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="1fP-ai-cBF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rgb-wG-BKF">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -440,13 +445,40 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTN-cW-YoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1166.1538461538462" y="113.74407582938387"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="76W-oD-W2y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2B6-Rk-hDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="jEU-fZ-VCO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nO4-MS-ilp" kind="relationship" relationship="viewControllers" id="9sx-A6-zi9"/>
+                        <segue destination="rQE-9T-JaP" kind="relationship" relationship="viewControllers" id="Zie-lo-RsV"/>
+                        <segue destination="Skv-XL-rAi" kind="relationship" relationship="viewControllers" id="axS-36-yv3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG8-2l-clR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="236.92307692307691" y="113.74407582938387"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lId-pc-Fq8"/>
+        <segue reference="axS-36-yv3"/>
+        <segue reference="Zie-lo-RsV"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="crown" catalog="system" width="128" height="92"/>
+        <image name="doc.text.magnifyingglass" catalog="system" width="107" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

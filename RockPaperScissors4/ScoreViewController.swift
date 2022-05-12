@@ -22,6 +22,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         tableView.frame = view.bounds
         getAllScores()
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,4 +45,6 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } catch {
         }
     }
+    
+    
 }

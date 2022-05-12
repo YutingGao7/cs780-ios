@@ -4,7 +4,7 @@ import Foundation
 class GameInfo {
     
     enum GameChoices: Int, CaseIterable {
-        case Rock, Paper, Scissors
+        case Rock, Paper, Scissors, Invalid
 
         func getString() -> String {
             switch self {
@@ -14,6 +14,8 @@ class GameInfo {
                 return "Paper"
             case .Scissors:
                 return "Scissors"
+            case .Invalid:
+                return "Invalid"
             }
         }
     }
