@@ -8,9 +8,8 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     @IBOutlet weak var roundField: UILabel!
     @IBOutlet weak var resultField: UILabel!
     @IBOutlet weak var playBtn: UIButton!
-    @IBOutlet weak var scoreBtn: UIButton!
     @IBOutlet weak var historyInfo: UILabel!
-    
+    @IBOutlet weak var scoreBtn: UIButton!
     
     
     let game = GameInfo()
@@ -71,17 +70,16 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     }
     
     func setButton(_ needExtraRound: Bool){
+        playBtn.setTitle("Next Round", for: .normal)
         if(needExtraRound && (game.getPreviousRound() >= game.TOTALROUND)){
             playBtn.setTitle("Final Round", for: .normal)
         }else if(!needExtraRound) {
+            playBtn.isHidden = true;
+            scoreBtn.isHidden = false;
             if(game.getFinalResultInt() == 1){
-                playBtn.isHidden = true;
-                scoreBtn.isHidden = false;
-                scoreBtn.setTitle("You Won", for: .normal)
+                scoreBtn.setTitle("You Won!", for: .normal)
             }else if(game.getFinalResultInt() == -1) {
-                playBtn.isHidden = true;
-                scoreBtn.isHidden = false;
-                scoreBtn.setTitle("You Lost", for: .normal)
+                scoreBtn.setTitle("You Lose...", for: .normal)
             }
         }
     }
