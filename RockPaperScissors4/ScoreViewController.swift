@@ -6,11 +6,13 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    let tableView: UITableView = {
-        let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return table
-    }()
+    @IBOutlet weak var tableView: UITableView!
+    
+//    let tableView: UITableView = {
+//        let table = UITableView()
+//        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        return table
+//    }()
     
     private var models = [UserScore]()
     
@@ -21,6 +23,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         getAllScores()
         self.navigationItem.setHidesBackButton(true, animated: true)
     }

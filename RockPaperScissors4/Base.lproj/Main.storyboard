@@ -91,25 +91,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
-                                <rect key="frame" x="30" y="168" width="330" height="513"/>
+                                <rect key="frame" x="16" y="138" width="358" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="30" id="SOM-A8-E79"/>
-                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="30" id="Xs1-UU-r9n"/>
-                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="80" id="ZdS-sj-DM1"/>
-                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="80" id="xLp-FF-WZh"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="16" id="SOM-A8-E79"/>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="16" id="Xs1-UU-r9n"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="50" id="ZdS-sj-DM1"/>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="50" id="xLp-FF-WZh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="crown" catalog="system" id="AhO-bw-fcZ"/>
                     <navigationItem key="navigationItem" id="9WS-c4-uW7"/>
+                    <connections>
+                        <outlet property="tableView" destination="q6o-Jz-Krz" id="WqM-2j-XCm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7P-ov-F3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="1035"/>
+            <point key="canvasLocation" x="2061.5384615384614" y="1034.3601895734596"/>
         </scene>
         <!--Help-->
         <scene sceneID="wXm-nl-leP">
