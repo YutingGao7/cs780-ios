@@ -9,6 +9,9 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     @IBOutlet weak var resultField: UILabel!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var scoreBtn: UIButton!
+    @IBOutlet weak var historyInfo: UILabel!
+    
+    
     
     let game = GameInfo()
     let gameRecording = GameAggregate()
@@ -51,6 +54,9 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         default:
             print("error! un-recognized round result int: \(roundInt)")
         }
+        
+        historyInfo.isHidden = false
+        historyInfo.text = game.getHistoryText()
     }
     
     
@@ -105,6 +111,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         resultField.isHidden = true;
         roundField.isHidden = true;
         scoreBtn.isHidden = true;
+        historyInfo.isHidden = true
         
     }
     

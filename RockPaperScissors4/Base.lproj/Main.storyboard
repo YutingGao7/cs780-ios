@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Input Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgr-FF-Fnz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgr-FF-Fnz">
                                 <rect key="frame" x="131" y="225" width="126.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -165,22 +165,12 @@
                                     <action selector="onViewScorePressed:" destination="Mnb-wZ-Jci" eventType="touchUpInside" id="ZQv-sO-95q"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-kF-pOV">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-kF-pOV">
                                 <rect key="frame" x="146" y="299" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-xl-uqe">
-                                <rect key="frame" x="159" y="636" width="74" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="confirm"/>
-                                <connections>
-                                    <action selector="onConfirmName:" destination="Mnb-wZ-Jci" eventType="touchUpInside" id="6VY-Ul-8Fj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-rJ-6jt">
                                 <rect key="frame" x="145" y="412" width="100" height="20.333333333333314"/>
                                 <constraints>
@@ -190,19 +180,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-xl-uqe">
+                                <rect key="frame" x="157" y="352" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="confirm"/>
+                                <connections>
+                                    <action selector="onConfirmName:" destination="Mnb-wZ-Jci" eventType="touchUpInside" id="6VY-Ul-8Fj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8uA-RY-CYK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Jgr-FF-Fnz" firstAttribute="top" secondItem="8uA-RY-CYK" secondAttribute="top" constant="137" id="0Wu-DP-7wo"/>
+                            <constraint firstItem="B4a-kF-pOV" firstAttribute="top" secondItem="Jgr-FF-Fnz" secondAttribute="bottom" constant="53" id="4rQ-Uw-jlK"/>
                             <constraint firstItem="Jgr-FF-Fnz" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="Kye-GC-Yes"/>
                             <constraint firstItem="cQM-rJ-6jt" firstAttribute="centerY" secondItem="Rwo-1Z-eSO" secondAttribute="centerY" id="b9p-Ss-4NJ"/>
+                            <constraint firstItem="Jgr-FF-Fnz" firstAttribute="leading" secondItem="8uA-RY-CYK" secondAttribute="leading" constant="131" id="cEN-AA-eCO"/>
+                            <constraint firstItem="Jgr-FF-Fnz" firstAttribute="centerX" secondItem="B4a-kF-pOV" secondAttribute="centerX" id="dvg-Zj-58p"/>
                             <constraint firstItem="cQM-rJ-6jt" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="pVF-rp-sjd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Alz-bd-EHo"/>
                     <connections>
+                        <outlet property="confirmNameBtn" destination="T4o-xl-uqe" id="1iq-Ly-QIQ"/>
                         <outlet property="prompt" destination="cQM-rJ-6jt" id="CaX-Xq-Gka"/>
                         <outlet property="userNameInput" destination="B4a-kF-pOV" id="fjd-3n-Gj8"/>
+                        <outlet property="viewScoreBtn" destination="6jY-ht-qer" id="9Tj-Eq-nVt"/>
                         <segue destination="rQE-9T-JaP" kind="show" identifier="toScorefromUserInputSegue" id="lId-pc-Fq8"/>
                     </connections>
                 </viewController>
@@ -331,6 +336,13 @@
                                     <action selector="scorePressed:" destination="LwW-xg-XkZ" eventType="touchUpInside" id="zhU-Le-Hmw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DY-QB-rph">
+                                <rect key="frame" x="83" y="611" width="219" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cEt-NM-CXD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -347,6 +359,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="23V-Mc-u3z"/>
                     <connections>
+                        <outlet property="historyInfo" destination="7DY-QB-rph" id="Gd3-j7-MRc"/>
                         <outlet property="playBtn" destination="bkW-8B-Q7x" id="RC1-l7-Mxr"/>
                         <outlet property="resultField" destination="HgO-Ns-3he" id="z44-HJ-MW6"/>
                         <outlet property="roundField" destination="fvv-4y-k8a" id="8TJ-sP-A4O"/>

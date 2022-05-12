@@ -15,10 +15,13 @@ class RecordViewController: UIViewController{
     
     @IBOutlet weak var prompt: UILabel!
     
+    @IBOutlet weak var confirmNameBtn: UIButton!
     
+    @IBOutlet weak var viewScoreBtn: UIButton!
     
     
     @IBAction func onConfirmName(_ sender: Any) {
+        prompt.isHidden = false
         guard let userName: String = userNameInput.text else {
             prompt.text = "Error! Please enter a valid name."
             return
@@ -30,8 +33,18 @@ class RecordViewController: UIViewController{
         }
         
         prompt.text = userName
+        userNameInput.isHidden = true
+        confirmNameBtn.isHidden = true
+        viewScoreBtn.isHidden = false
+        
+        
     }
     @IBAction func onViewScorePressed(_ sender: Any) {
         performSegue(withIdentifier: "toScorefromUserInputSegue", sender: self)
+    }
+    
+    override func viewDidLoad() {
+        prompt.isHidden = true
+        viewScoreBtn.isHidden = true
     }
 }
