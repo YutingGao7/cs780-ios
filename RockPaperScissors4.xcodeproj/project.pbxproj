@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		3616892A282A1C2B005B9D47 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36168929282A1C2B005B9D47 /* GameInfo.swift */; };
 		3616892C282A473B005B9D47 /* FinalResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616892B282A473B005B9D47 /* FinalResultViewController.swift */; };
-		3616893F282BA7C9005B9D47 /* UserScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616893D282BA7C9005B9D47 /* UserScore+CoreDataClass.swift */; };
-		36168940282BA7C9005B9D47 /* UserScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616893E282BA7C9005B9D47 /* UserScore+CoreDataProperties.swift */; };
 		36168975282C84DA005B9D47 /* GameAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36168974282C84DA005B9D47 /* GameAggregate.swift */; };
 		36168977282C871D005B9D47 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36168976282C871D005B9D47 /* RecordViewController.swift */; };
+		3616897C282CEE05005B9D47 /* UserScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */; };
+		3616897D282CEE05005B9D47 /* UserScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */; };
 		369805E52828A2CB00E8FAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E42828A2CB00E8FAAE /* AppDelegate.swift */; };
 		369805E72828A2CB00E8FAAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E62828A2CB00E8FAAE /* SceneDelegate.swift */; };
 		369805E92828A2CB00E8FAAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E82828A2CB00E8FAAE /* HomeViewController.swift */; };
@@ -29,10 +29,10 @@
 /* Begin PBXFileReference section */
 		36168929282A1C2B005B9D47 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		3616892B282A473B005B9D47 /* FinalResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalResultViewController.swift; sourceTree = "<group>"; };
-		3616893D282BA7C9005B9D47 /* UserScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3616893E282BA7C9005B9D47 /* UserScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		36168974282C84DA005B9D47 /* GameAggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAggregate.swift; sourceTree = "<group>"; };
 		36168976282C871D005B9D47 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		369805E12828A2CB00E8FAAE /* RockPaperScissors4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369805E42828A2CB00E8FAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369805E62828A2CB00E8FAAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		369805E32828A2CB00E8FAAE /* RockPaperScissors4 */ = {
 			isa = PBXGroup;
 			children = (
-				3616893D282BA7C9005B9D47 /* UserScore+CoreDataClass.swift */,
-				3616893E282BA7C9005B9D47 /* UserScore+CoreDataProperties.swift */,
+				3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */,
+				3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */,
 				369805E42828A2CB00E8FAAE /* AppDelegate.swift */,
 				369805E62828A2CB00E8FAAE /* SceneDelegate.swift */,
 				369805E82828A2CB00E8FAAE /* HomeViewController.swift */,
@@ -176,15 +176,15 @@
 				369806002828A48A00E8FAAE /* HelpViewController.swift in Sources */,
 				36168977282C871D005B9D47 /* RecordViewController.swift in Sources */,
 				3616892A282A1C2B005B9D47 /* GameInfo.swift in Sources */,
-				36168940282BA7C9005B9D47 /* UserScore+CoreDataProperties.swift in Sources */,
 				369805FC2828A44C00E8FAAE /* GameViewController.swift in Sources */,
 				369805E92828A2CB00E8FAAE /* HomeViewController.swift in Sources */,
 				369805E52828A2CB00E8FAAE /* AppDelegate.swift in Sources */,
 				3616892C282A473B005B9D47 /* FinalResultViewController.swift in Sources */,
-				3616893F282BA7C9005B9D47 /* UserScore+CoreDataClass.swift in Sources */,
 				369805E72828A2CB00E8FAAE /* SceneDelegate.swift in Sources */,
 				369805EF2828A2CB00E8FAAE /* RockPaperScissors4.xcdatamodeld in Sources */,
+				3616897D282CEE05005B9D47 /* UserScore+CoreDataProperties.swift in Sources */,
 				369805FE2828A47400E8FAAE /* ScoreViewController.swift in Sources */,
+				3616897C282CEE05005B9D47 /* UserScore+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

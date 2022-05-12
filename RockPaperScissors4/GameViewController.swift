@@ -1,16 +1,13 @@
 
 import UIKit
 
-
 protocol GameViewDelegate: AnyObject {
-    func playerChoiceSet(_ playerChoice: String)
+ func playerChoiceSet(_ playerChoice: String)
 }
-
 
 class GameViewController: UIViewController{
     
     weak var delegate: RoundResultViewController? = nil
-    
     
     @IBOutlet weak var timerField: UILabel!
     @IBOutlet weak var roundField: UILabel!

@@ -2,7 +2,7 @@
 //  UserScore+CoreDataProperties.swift
 //  RockPaperScissors4
 //
-//  Created by Candy Gao on 5/11/22.
+//  Created by Candy Gao on 5/12/22.
 //
 //
 
@@ -24,6 +24,8 @@ extension UserScore {
     @NSManaged public var losses: Int16
     @NSManaged public var ties: Int16
     @NSManaged public var wins: Int16
+    @NSManaged public var name: String?
+    @NSManaged public var date: Date?
 
 }
 

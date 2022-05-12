@@ -8,11 +8,6 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
     
-//    let tableView: UITableView = {
-//        let table = UITableView()
-//        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-//        return table
-//    }()
     
     private var models = [UserScore]()
     
@@ -36,7 +31,8 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Wins: \(model.wins), Losses: \(model.losses), Ties: \(model.ties)"
+        let name: String = model.name!
+        cell.textLabel?.text = "\(name), Wins: \(model.wins), Losses: \(model.losses), Ties: \(model.ties)"
 
         return cell
     }

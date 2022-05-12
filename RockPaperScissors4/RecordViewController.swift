@@ -9,6 +9,7 @@ import Foundation
 
 import UIKit
 
+
 class RecordViewController: UIViewController{
     
     @IBOutlet weak var userNameInput: UITextField!
@@ -16,6 +17,8 @@ class RecordViewController: UIViewController{
     @IBOutlet weak var confirmNameBtn: UIButton!
     @IBOutlet weak var viewScoreBtn: UIButton!
     @IBOutlet weak var playerName: UILabel!
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBAction func onConfirmName(_ sender: Any) {
         prompt.isHidden = false
@@ -35,11 +38,32 @@ class RecordViewController: UIViewController{
         userNameInput.isHidden = true
         confirmNameBtn.isHidden = true
         viewScoreBtn.isHidden = false
+
         
+        storeScore(userName)
         
     }
     @IBAction func onViewScorePressed(_ sender: Any) {
         performSegue(withIdentifier: "toScorefromUserInputSegue", sender: self)
+    }
+    
+    func storeScore(_ userName: String){
+        print("storing score")
+        let newScore = UserScore(context: context)
+        var winNum: Int, tieNum: Int, lossNum: Int
+        (winNum, tieNum, lossNum) = GameAggregate.getUserScores()
+        newScore.wins = Int16(winNum)
+        newScore.ties = Int16(tieNum)
+        newScore.losses = Int16(lossNum)
+        newScore.name = userName
+        
+        do {
+            try context.save()
+        } catch {
+        }
+        
+        GameAggregate.reset()
+        
     }
     
     override func viewDidLoad() {
@@ -47,4 +71,5 @@ class RecordViewController: UIViewController{
         viewScoreBtn.isHidden = true
         playerName.isHidden = true
     }
+    
 }

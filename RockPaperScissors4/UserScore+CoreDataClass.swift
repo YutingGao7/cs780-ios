@@ -2,7 +2,7 @@
 //  UserScore+CoreDataClass.swift
 //  RockPaperScissors4
 //
-//  Created by Candy Gao on 5/11/22.
+//  Created by Candy Gao on 5/12/22.
 //
 //
 

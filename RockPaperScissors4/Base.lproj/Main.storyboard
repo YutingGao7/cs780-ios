@@ -126,25 +126,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
-                                <rect key="frame" x="16" y="168" width="358" height="493"/>
+                                <rect key="frame" x="16" y="124" width="358" height="537"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLG-qL-ple">
-                                <rect key="frame" x="45" y="118.00000000000001" width="300" height="33.666666666666671"/>
+                                <rect key="frame" x="45" y="74" width="300" height="33.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7U4-Ff-2Ez"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISy-NW-xgK">
-                                <rect key="frame" x="142" y="708" width="107" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISy-NW-xgK">
+                                <rect key="frame" x="120" y="709" width="150" height="37"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Clear Scores"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear Scores">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onClickClear:" destination="rQE-9T-JaP" eventType="touchUpInside" id="gQD-Je-Oto"/>
                                 </connections>
@@ -153,11 +156,13 @@
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
                         <color key="backgroundColor" red="0.86422218996262634" green="0.82465822118510013" blue="0.66017095001113679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="ISy-NW-xgK" secondAttribute="bottom" constant="15" id="7id-Wk-n96"/>
                             <constraint firstItem="gLG-qL-ple" firstAttribute="centerX" secondItem="qMY-dq-p2B" secondAttribute="centerX" id="AZ4-7v-J7g"/>
                             <constraint firstItem="gLG-qL-ple" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="30" id="RxO-eq-IXI"/>
                             <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="16" id="SOM-A8-E79"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="16" id="Xs1-UU-r9n"/>
                             <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="80" id="ZdS-sj-DM1"/>
+                            <constraint firstItem="ISy-NW-xgK" firstAttribute="centerX" secondItem="qMY-dq-p2B" secondAttribute="centerX" id="bs8-fx-7NA"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="100" id="xLp-FF-WZh"/>
                         </constraints>
                     </view>
@@ -315,8 +320,8 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                                 <color key="textColor" red="0.79123506461731108" green="0.071546677260998517" blue="0.0091171709296587571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A62-Ob-9B8">
-                                <rect key="frame" x="150.66666666666666" y="403" width="89" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A62-Ob-9B8">
+                                <rect key="frame" x="149.66666666666666" y="403" width="91" height="38"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" red="0.69711522223859745" green="0.23696376879141334" blue="0.91976243257522583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -578,7 +583,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="jEU-fZ-VCO">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="0.10026903973509933" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
@@ -627,7 +632,6 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="27"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="quitPressed:" destination="M54-Xt-hBa" eventType="touchUpInside" id="6jS-Fg-9fn"/>
                                     <segue destination="Mnb-wZ-Jci" kind="show" id="LMY-O6-VRG"/>
                                 </connections>
                             </button>
@@ -656,7 +660,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="axS-36-yv3"/>
-        <segue reference="lId-pc-Fq8"/>
+        <segue reference="Zie-lo-RsV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="crown.fill" catalog="system" width="128" height="92"/>

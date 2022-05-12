@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  RockPaperScissors4
-//
-//  Created by Candy Gao on 5/8/22.
-//
 
 import UIKit
 
@@ -14,7 +8,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func onClickStart(_ sender: Any) {
         self.performSegue(withIdentifier: "toRoundResultSegue", sender: self)
-        //gameName.textColor = UIColor.red
     }
     
     @IBAction func onClickScore(_ sender: Any) {
@@ -25,9 +18,6 @@ class HomeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-    
-    
 }
 

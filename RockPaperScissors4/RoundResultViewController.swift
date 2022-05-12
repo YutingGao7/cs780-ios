@@ -2,20 +2,15 @@
 import UIKit
 
 
-
-class RoundResultViewController: UIViewController, GameViewDelegate, FinalResultViewDelegate{
+class RoundResultViewController: UIViewController, GameViewDelegate{
 
     @IBOutlet weak var roundField: UILabel!
     @IBOutlet weak var resultField: UILabel!
-    @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var historyInfo: UILabel!
+    @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var scoreBtn: UIButton!
     
-    
     let game = GameInfo()
-    //let gameRecording = GameAggregate()
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     //when play pressed, initiate gameView, set delegate, and display
     @IBAction func playPressed (_ sender: UIButton) {
@@ -33,29 +28,21 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     //gameView notifies this resultVC, part of delegate protocol
     //this function is called when the helper finishes the work
     func playerChoiceSet(_ playerChoice: String){
+        //interact with model
         game.setPlayerInt(playerChoice)
         let roundInt: Int, roundResultText: String, aiChoice: String, extraRound: Bool
         (roundInt, roundResultText, aiChoice, extraRound) = game.getGameResult()
         
+        //handle view display
         displayRound(game.getPreviousRound())
         displayRoundResult(playerChoice, aiChoice, roundResultText)
-        
-        setButton(extraRound)
-        
-        
-        switch roundInt {
-        case 1:
-            GameAggregate.recordWin()
-        case 0:
-            GameAggregate.recordTie()
-        case -1:
-            GameAggregate.recordLose()
-        default:
-            print("error! un-recognized round result int: \(roundInt)")
-        }
-        
         historyInfo.isHidden = false
         historyInfo.text = game.getHistoryText()
+        setButton(extraRound)
+        
+        //interact with semi-database, aka record global data
+        recordToGameRecording(roundInt)
+        
     }
     
     
@@ -91,9 +78,8 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //print(segue.destination)
         if let finalResultVC = segue.destination as? FinalResultViewController {
-            finalResultVC.delegate = self
+            //finalResultVC.delegate = self
             if(game.getFinalResultInt() == 1) {
                 finalResultVC.greetingText = "Congratulations!"
             }else{
@@ -103,7 +89,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         resultField.isHidden = true;
@@ -113,26 +99,17 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         
     }
     
-    func storeScore(){
-        print("storing score")
-        let newScore = UserScore(context: context)
-        var winNum: Int, tieNum: Int, lossNum: Int
-        (winNum, tieNum, lossNum) = GameAggregate.getUserScores()
-        newScore.wins = Int16(winNum)
-        newScore.ties = Int16(tieNum)
-        newScore.losses = Int16(lossNum)
-        
-        //(newScore.wins, newScore.ties, newScore.losses) = Int32(gameRecording.getUserScores())
-        //print(GameAggregate.getUserScores())
-
-        do {
-            try context.save()
-        } catch {
+    func recordToGameRecording(_ rountResultInt: Int){
+        switch rountResultInt {
+        case 1:
+            GameAggregate.recordWin()
+        case 0:
+            GameAggregate.recordTie()
+        case -1:
+            GameAggregate.recordLose()
+        default:
+            print("error! un-recognized round result int: \(rountResultInt)")
         }
-        
-        GameAggregate.reset()
-        
     }
-    
     
 }

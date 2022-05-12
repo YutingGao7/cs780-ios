@@ -22,6 +22,7 @@ class GameAggregate {
         loseNum += 1
     }
     
+    
     static func getUserScores() -> (Int, Int, Int){
         return (winNum, tieNum, loseNum)
     }
