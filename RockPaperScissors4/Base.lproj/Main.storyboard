@@ -117,6 +117,22 @@
             </objects>
             <point key="canvasLocation" x="2095.3846153846152" y="113.74407582938387"/>
         </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="hON-Vd-Ot4">
+            <objects>
+                <viewController id="doL-lI-bY3" customClass="ThankYouViewController" customModule="RockPaperScissors4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nkP-UU-bpW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="I8W-Cm-c9v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j0b-ty-TTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="701-3l-03r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="1016"/>
+        </scene>
         <!--Score-->
         <scene sceneID="zPN-vI-0iY">
             <objects>
@@ -185,24 +201,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-qm-pTz">
-                                <rect key="frame" x="25" y="54" width="104" height="22"/>
+                                <rect key="frame" x="25" y="113" width="104" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pug-bm-6Qk">
-                                <rect key="frame" x="30" y="84" width="330" height="189"/>
+                                <rect key="frame" x="30" y="145" width="330" height="180"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Uzx-Qa-5W1"/>
+                                </constraints>
                                 <string key="text">Rock Paper Scissors! is an ios based application that is developed by Yuting Gao -- a graduate student in SFSU as part of the term project in CSC780.
 
 Originally, Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. </string>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78y-bd-Qs9">
-                                <rect key="frame" x="30" y="299" width="330" height="246"/>
+                                <rect key="frame" x="30" y="392" width="330" height="230"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="UC5-vg-gOt"/>
+                                </constraints>
                                 <string key="text">A simultaneous, zero-sum game, it has three possible outcomes: a tie, a win or a loss. If two players have the same choices, then a tie occurs. Otherwise, the general rules are:
 
                 Rock defeats Scissors
@@ -211,29 +233,24 @@ Originally, Rock Paper Scissors is a hand game originating from China, usually p
 
 In this IOS game, the player is playing aganst a randomly generated opponent. If players fail to make decision within 3 seconds, they automatically lost this round.
 </string>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-iX-gQS">
-                                <rect key="frame" x="25" y="270" width="43.666666666666657" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-5w-foY">
-                                <rect key="frame" x="30" y="579" width="330" height="162"/>
-                                <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="7CB-x9-W40"/>
-                                </constraints>
-                                <string key="text">Rock Paper Scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision. Unlike truly random selection methods, however, rock paper scissors can be played with a degree of skill by recognizing and exploiting non-random behavior in opponents.</string>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3B-Vp-jf8">
-                                <rect key="frame" x="25" y="543" width="92" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lp-hY-LSd">
+                                <rect key="frame" x="30" y="672" width="330" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enjoy a Celebrating Firework!">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.6971152222" green="0.2369637688" blue="0.91976243260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="doL-lI-bY3" kind="show" id="vp3-Lk-mli"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-iX-gQS">
+                                <rect key="frame" x="24.999999999999996" y="360" width="43.666666666666657" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -242,27 +259,19 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                         <viewLayoutGuide key="safeArea" id="LJV-Qv-c1K"/>
                         <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="pug-bm-6Qk" firstAttribute="top" secondItem="WYv-qm-pTz" secondAttribute="bottom" constant="8" symbolic="YES" id="6Xu-f0-NIl"/>
-                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="top" secondItem="pug-bm-6Qk" secondAttribute="bottom" constant="-1" id="9gb-Jn-sE2"/>
-                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="bottom" secondItem="9K5-5w-foY" secondAttribute="bottom" constant="20" id="9u5-Gd-aoI"/>
-                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="A3N-2q-fRe"/>
-                            <constraint firstItem="78y-bd-Qs9" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="Dud-az-FRf"/>
-                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="78y-bd-Qs9" secondAttribute="trailing" constant="30" id="HBe-xW-oDQ"/>
-                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="top" secondItem="78y-bd-Qs9" secondAttribute="bottom" constant="-2" id="Ic7-h0-cBG"/>
-                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="top" secondItem="78y-bd-Qs9" secondAttribute="bottom" constant="-2" id="KId-Yc-esu"/>
-                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="pug-bm-6Qk" secondAttribute="trailing" constant="30" id="KcY-Cl-08S"/>
-                            <constraint firstItem="78y-bd-Qs9" firstAttribute="top" secondItem="pug-bm-6Qk" secondAttribute="bottom" constant="26" id="KsS-hR-1o3"/>
-                            <constraint firstItem="78y-bd-Qs9" firstAttribute="centerY" secondItem="PgF-xo-E8f" secondAttribute="centerY" id="LkD-u5-fEg"/>
-                            <constraint firstItem="9K5-5w-foY" firstAttribute="top" secondItem="d3B-Vp-jf8" secondAttribute="bottom" constant="14" id="MnD-mZ-jL7"/>
-                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="Uyp-QE-cfh"/>
-                            <constraint firstItem="9K5-5w-foY" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="WvZ-rA-YI7"/>
-                            <constraint firstItem="78y-bd-Qs9" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="hnu-CG-JBB"/>
-                            <constraint firstItem="78y-bd-Qs9" firstAttribute="top" secondItem="0Ej-iX-gQS" secondAttribute="bottom" constant="6" id="lQw-Ro-Poj"/>
-                            <constraint firstItem="pug-bm-6Qk" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="lnX-Lw-CPd"/>
-                            <constraint firstItem="pug-bm-6Qk" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="owG-Ly-T2h"/>
-                            <constraint firstItem="WYv-qm-pTz" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="pd0-uQ-8eF"/>
-                            <constraint firstItem="WYv-qm-pTz" firstAttribute="top" secondItem="LJV-Qv-c1K" secondAttribute="top" constant="10" id="wNI-iX-8Nb"/>
-                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="9K5-5w-foY" secondAttribute="trailing" constant="30" id="yk0-bA-ztk"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="78y-bd-Qs9" secondAttribute="trailing" constant="30" id="0hi-iS-cvG"/>
+                            <constraint firstItem="pug-bm-6Qk" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="3YZ-Pv-ToS"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="3lp-hY-LSd" secondAttribute="trailing" constant="30" id="3oK-oq-O9F"/>
+                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="6M4-Zk-U5l"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="pug-bm-6Qk" secondAttribute="trailing" constant="30" id="8HS-tb-F9s"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="Ez8-w0-7tE"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="bottom" secondItem="3lp-hY-LSd" secondAttribute="bottom" constant="50" id="PrO-CV-xvY"/>
+                            <constraint firstItem="3lp-hY-LSd" firstAttribute="top" secondItem="78y-bd-Qs9" secondAttribute="bottom" constant="50" id="Qsh-Bd-aG6"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="top" secondItem="0Ej-iX-gQS" secondAttribute="bottom" constant="10" id="V82-0b-Ww5"/>
+                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="top" secondItem="pug-bm-6Qk" secondAttribute="bottom" constant="35" id="Yjv-tK-Xee"/>
+                            <constraint firstItem="pug-bm-6Qk" firstAttribute="top" secondItem="WYv-qm-pTz" secondAttribute="bottom" constant="10" id="bYX-z8-ZtE"/>
+                            <constraint firstItem="3lp-hY-LSd" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="dfE-mb-gYh"/>
+                            <constraint firstItem="WYv-qm-pTz" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="oIW-YV-xF1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="doc.text.magnifyingglass" catalog="system" id="WcG-2C-HW5"/>

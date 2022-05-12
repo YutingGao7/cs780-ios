@@ -13,6 +13,8 @@
 		36168977282C871D005B9D47 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36168976282C871D005B9D47 /* RecordViewController.swift */; };
 		3616897C282CEE05005B9D47 /* UserScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */; };
 		3616897D282CEE05005B9D47 /* UserScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */; };
+		3616897F282D09CE005B9D47 /* MTVideo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 3616897E282D09CE005B9D47 /* MTVideo.MP4 */; };
+		36168981282D0DAB005B9D47 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36168980282D0DAB005B9D47 /* ThankYouViewController.swift */; };
 		369805E52828A2CB00E8FAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E42828A2CB00E8FAAE /* AppDelegate.swift */; };
 		369805E72828A2CB00E8FAAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E62828A2CB00E8FAAE /* SceneDelegate.swift */; };
 		369805E92828A2CB00E8FAAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369805E82828A2CB00E8FAAE /* HomeViewController.swift */; };
@@ -33,6 +35,8 @@
 		36168976282C871D005B9D47 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3616897E282D09CE005B9D47 /* MTVideo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MTVideo.MP4; sourceTree = "<group>"; };
+		36168980282D0DAB005B9D47 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
 		369805E12828A2CB00E8FAAE /* RockPaperScissors4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369805E42828A2CB00E8FAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369805E62828A2CB00E8FAAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 		369805E32828A2CB00E8FAAE /* RockPaperScissors4 */ = {
 			isa = PBXGroup;
 			children = (
+				3616897E282D09CE005B9D47 /* MTVideo.MP4 */,
 				3616897A282CEE05005B9D47 /* UserScore+CoreDataClass.swift */,
 				3616897B282CEE05005B9D47 /* UserScore+CoreDataProperties.swift */,
 				369805E42828A2CB00E8FAAE /* AppDelegate.swift */,
@@ -89,6 +94,7 @@
 				36168976282C871D005B9D47 /* RecordViewController.swift */,
 				369805FD2828A47400E8FAAE /* ScoreViewController.swift */,
 				369805FF2828A48A00E8FAAE /* HelpViewController.swift */,
+				36168980282D0DAB005B9D47 /* ThankYouViewController.swift */,
 				36168929282A1C2B005B9D47 /* GameInfo.swift */,
 				36168974282C84DA005B9D47 /* GameAggregate.swift */,
 				369805EA2828A2CB00E8FAAE /* Main.storyboard */,
@@ -160,6 +166,7 @@
 			files = (
 				369805F42828A2CC00E8FAAE /* LaunchScreen.storyboard in Resources */,
 				369805F12828A2CC00E8FAAE /* Assets.xcassets in Resources */,
+				3616897F282D09CE005B9D47 /* MTVideo.MP4 in Resources */,
 				369805EC2828A2CB00E8FAAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +187,7 @@
 				369805E92828A2CB00E8FAAE /* HomeViewController.swift in Sources */,
 				369805E52828A2CB00E8FAAE /* AppDelegate.swift in Sources */,
 				3616892C282A473B005B9D47 /* FinalResultViewController.swift in Sources */,
+				36168981282D0DAB005B9D47 /* ThankYouViewController.swift in Sources */,
 				369805E72828A2CB00E8FAAE /* SceneDelegate.swift in Sources */,
 				369805EF2828A2CB00E8FAAE /* RockPaperScissors4.xcdatamodeld in Sources */,
 				3616897D282CEE05005B9D47 /* UserScore+CoreDataProperties.swift in Sources */,

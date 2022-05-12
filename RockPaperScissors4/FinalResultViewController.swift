@@ -2,6 +2,7 @@
 import UIKit
 
 
+
 class FinalResultViewController: UIViewController{
     
     
@@ -23,6 +24,8 @@ class FinalResultViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         greeting.text = greetingText
+       
+        
     }
     
 }
