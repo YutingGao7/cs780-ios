@@ -18,7 +18,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "History Scores"
+        //title = "History Scores"
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
@@ -26,6 +26,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         getAllScores()
         self.navigationItem.setHidesBackButton(true, animated: true)
+        //tableView.backgroundColor = UIColor(red: 28, green: 55, blue: 62, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,6 +37,7 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Wins: \(model.wins), Losses: \(model.losses), Ties: \(model.ties)"
+
         return cell
     }
 

@@ -86,7 +86,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     
     
     @IBAction func scorePressed(_ sender: Any) {
-        performSegue(withIdentifier: "toFinalResultSegue", sender: self)
+        //performSegue(withIdentifier: "toFinalResultSegue", sender: self)
         
     }
     

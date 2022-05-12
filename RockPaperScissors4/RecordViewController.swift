@@ -19,6 +19,7 @@ class RecordViewController: UIViewController{
     
     @IBOutlet weak var viewScoreBtn: UIButton!
     
+    @IBOutlet weak var playerName: UILabel!
     
     @IBAction func onConfirmName(_ sender: Any) {
         prompt.isHidden = false
@@ -32,7 +33,9 @@ class RecordViewController: UIViewController{
             return
         }
         
-        prompt.text = userName
+        playerName.isHidden = false
+        playerName.text = userName
+        prompt.isHidden = true
         userNameInput.isHidden = true
         confirmNameBtn.isHidden = true
         viewScoreBtn.isHidden = false
@@ -46,5 +49,6 @@ class RecordViewController: UIViewController{
     override func viewDidLoad() {
         prompt.isHidden = true
         viewScoreBtn.isHidden = true
+        playerName.isHidden = true
     }
 }

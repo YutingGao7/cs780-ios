@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-qB-5yg">
-                                <rect key="frame" x="40" y="147.99999999999997" width="310" height="282.33333333333326"/>
+                                <rect key="frame" x="40" y="137.99999999999997" width="310" height="282.33333333333326"/>
                                 <color key="tintColor" red="0.58269692266110296" green="0.37504253513413449" blue="0.083439271333243192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Rock, Paper, Scissors!">
@@ -34,15 +33,12 @@
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HJ-EF-oPw">
-                                <rect key="frame" x="153" y="496.33333333333326" width="84" height="48"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Start">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="ChalkboardSE-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <rect key="frame" x="120" y="480.33333333333331" width="150" height="47.999999999999943"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="t1s-qm-lGT"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Start" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
                                     <color key="baseForegroundColor" red="0.1096477721" green="0.21694405689999999" blue="0.2440334196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.80039988660000005" green="0.51604082630000003" blue="0.10852569400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -51,15 +47,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-d1-i1y">
-                                <rect key="frame" x="151.66666666666666" y="574.33333333333337" width="86.666666666666657" height="48"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Score">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="ChalkboardSE-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <rect key="frame" x="120" y="558.33333333333337" width="150" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="l4b-zp-KEH"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Score" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
                                     <color key="baseForegroundColor" red="0.1096477721" green="0.21694405689999999" blue="0.2440334196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.80039988660000005" green="0.51604082630000003" blue="0.10852569400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -68,16 +61,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R97-yt-9hZ">
-                                <rect key="frame" x="152.33333333333334" y="652.33333333333337" width="85.333333333333343" height="41"/>
+                                <rect key="frame" x="120" y="636.33333333333337" width="150" height="46.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="W8O-O4-GR0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="How To">
-                                            <attributes>
-                                                <font key="NSFont" size="19" name="ChalkboardSE-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="How To" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                     <color key="baseForegroundColor" red="0.1096477721" green="0.21694405689999999" blue="0.2440334196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.80039988660000005" green="0.51604082630000003" blue="0.10852569400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -101,12 +91,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.10964777208620904" green="0.21694405690686214" blue="0.24403341959432223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="3HJ-EF-oPw" firstAttribute="top" secondItem="3zP-qB-5yg" secondAttribute="bottom" constant="66" id="0BW-1U-dXc"/>
+                            <constraint firstItem="3HJ-EF-oPw" firstAttribute="top" secondItem="3zP-qB-5yg" secondAttribute="bottom" constant="60" id="0BW-1U-dXc"/>
                             <constraint firstItem="Foz-d1-i1y" firstAttribute="top" secondItem="3HJ-EF-oPw" secondAttribute="bottom" constant="30" id="5uQ-s5-yWD"/>
                             <constraint firstItem="Foz-d1-i1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FPt-wv-swc"/>
                             <constraint firstItem="R97-yt-9hZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OW4-ll-T3E"/>
                             <constraint firstItem="3zP-qB-5yg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SGK-5v-6Td"/>
-                            <constraint firstItem="3zP-qB-5yg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="bNB-hq-BBe"/>
+                            <constraint firstItem="3zP-qB-5yg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="bNB-hq-BBe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3zP-qB-5yg" secondAttribute="trailing" constant="40" id="dg4-gr-0j1"/>
                             <constraint firstItem="3HJ-EF-oPw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfe-qG-6vs"/>
                             <constraint firstItem="3zP-qB-5yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="noj-CZ-BE1"/>
@@ -136,16 +126,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
-                                <rect key="frame" x="16" y="138" width="358" height="573"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="16" y="144" width="358" height="567"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLG-qL-ple">
+                                <rect key="frame" x="45" y="74" width="300" height="33.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7U4-Ff-2Ez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.86422218996262634" green="0.82465822118510013" blue="0.66017095001113679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="gLG-qL-ple" firstAttribute="centerX" secondItem="qMY-dq-p2B" secondAttribute="centerX" id="AZ4-7v-J7g"/>
+                            <constraint firstItem="gLG-qL-ple" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="30" id="RxO-eq-IXI"/>
                             <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="16" id="SOM-A8-E79"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="16" id="Xs1-UU-r9n"/>
-                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="50" id="ZdS-sj-DM1"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="100" id="ZdS-sj-DM1"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="50" id="xLp-FF-WZh"/>
                         </constraints>
                     </view>
@@ -167,31 +170,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pug-bm-6Qk">
-                                <rect key="frame" x="27" y="88" width="336" height="620"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Introduction
-Rock Paper Scissors! is an ios based application that is developed by Yuting Gao -- a graduate student in SFSU as part of the term project in CSC780.
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-qm-pTz">
+                                <rect key="frame" x="25" y="54" width="104" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pug-bm-6Qk">
+                                <rect key="frame" x="30" y="84" width="330" height="189"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Rock Paper Scissors! is an ios based application that is developed by Yuting Gao -- a graduate student in SFSU as part of the term project in CSC780.
 
-Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. 
-
-Rules
-A simultaneous, zero-sum game, it has three possible outcomes: a tie, a win or a loss. If two players have the same choices, then a tie occurs. Otherwise, the general rules are:
-Rock defeats Scissors
-Scissors defeats Paper
-Paper defeats Rock
-In this IOS game, the player is playing aganst a randomly generated opponent. If players fail to make decision within 3 seconds, they automatically lost this round.
-
-Implication
-Rock Paper Scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision. Unlike truly random selection methods, however, rock paper scissors can be played with a degree of skill by recognizing and exploiting non-random behavior in opponents.</mutableString>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+Originally, Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. </string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78y-bd-Qs9">
+                                <rect key="frame" x="30" y="299" width="330" height="246"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">A simultaneous, zero-sum game, it has three possible outcomes: a tie, a win or a loss. If two players have the same choices, then a tie occurs. Otherwise, the general rules are:
+
+                Rock defeats Scissors
+                Scissors defeats Paper
+                Paper defeats Rock
+
+In this IOS game, the player is playing aganst a randomly generated opponent. If players fail to make decision within 3 seconds, they automatically lost this round.
+</string>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-iX-gQS">
+                                <rect key="frame" x="25" y="270" width="43.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-5w-foY">
+                                <rect key="frame" x="30" y="579" width="330" height="162"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="7CB-x9-W40"/>
+                                </constraints>
+                                <string key="text">Rock Paper Scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision. Unlike truly random selection methods, however, rock paper scissors can be played with a degree of skill by recognizing and exploiting non-random behavior in opponents.</string>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3B-Vp-jf8">
+                                <rect key="frame" x="25" y="543" width="92" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LJV-Qv-c1K"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pug-bm-6Qk" firstAttribute="top" secondItem="WYv-qm-pTz" secondAttribute="bottom" constant="8" symbolic="YES" id="6Xu-f0-NIl"/>
+                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="top" secondItem="pug-bm-6Qk" secondAttribute="bottom" constant="-1" id="9gb-Jn-sE2"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="bottom" secondItem="9K5-5w-foY" secondAttribute="bottom" constant="20" id="9u5-Gd-aoI"/>
+                            <constraint firstItem="0Ej-iX-gQS" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="A3N-2q-fRe"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="Dud-az-FRf"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="78y-bd-Qs9" secondAttribute="trailing" constant="30" id="HBe-xW-oDQ"/>
+                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="top" secondItem="78y-bd-Qs9" secondAttribute="bottom" constant="-2" id="Ic7-h0-cBG"/>
+                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="top" secondItem="78y-bd-Qs9" secondAttribute="bottom" constant="-2" id="KId-Yc-esu"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="pug-bm-6Qk" secondAttribute="trailing" constant="30" id="KcY-Cl-08S"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="top" secondItem="pug-bm-6Qk" secondAttribute="bottom" constant="26" id="KsS-hR-1o3"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="centerY" secondItem="PgF-xo-E8f" secondAttribute="centerY" id="LkD-u5-fEg"/>
+                            <constraint firstItem="9K5-5w-foY" firstAttribute="top" secondItem="d3B-Vp-jf8" secondAttribute="bottom" constant="14" id="MnD-mZ-jL7"/>
+                            <constraint firstItem="d3B-Vp-jf8" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="Uyp-QE-cfh"/>
+                            <constraint firstItem="9K5-5w-foY" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="WvZ-rA-YI7"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="hnu-CG-JBB"/>
+                            <constraint firstItem="78y-bd-Qs9" firstAttribute="top" secondItem="0Ej-iX-gQS" secondAttribute="bottom" constant="6" id="lQw-Ro-Poj"/>
+                            <constraint firstItem="pug-bm-6Qk" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="30" id="lnX-Lw-CPd"/>
+                            <constraint firstItem="pug-bm-6Qk" firstAttribute="centerX" secondItem="PgF-xo-E8f" secondAttribute="centerX" id="owG-Ly-T2h"/>
+                            <constraint firstItem="WYv-qm-pTz" firstAttribute="leading" secondItem="LJV-Qv-c1K" secondAttribute="leading" constant="25" id="pd0-uQ-8eF"/>
+                            <constraint firstItem="WYv-qm-pTz" firstAttribute="top" secondItem="LJV-Qv-c1K" secondAttribute="top" constant="10" id="wNI-iX-8Nb"/>
+                            <constraint firstItem="LJV-Qv-c1K" firstAttribute="trailing" secondItem="9K5-5w-foY" secondAttribute="trailing" constant="30" id="yk0-bA-ztk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help" image="doc.text.magnifyingglass" catalog="system" id="WcG-2C-HW5"/>
                     <navigationItem key="navigationItem" id="pui-BL-zBQ"/>
@@ -208,61 +266,86 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgr-FF-Fnz">
-                                <rect key="frame" x="131" y="225" width="126.99999999999997" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgr-FF-Fnz">
+                                <rect key="frame" x="20" y="225" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="P7H-7G-ppS"/>
+                                    <constraint firstAttribute="width" constant="350" id="R9R-2v-xVq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-ht-qer">
-                                <rect key="frame" x="148" y="558" width="95" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-ht-qer">
+                                <rect key="frame" x="122.66666666666669" y="568" width="145" height="40"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="view Score"/>
+                                <buttonConfiguration key="configuration" style="filled" title="View Score">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onViewScorePressed:" destination="Mnb-wZ-Jci" eventType="touchUpInside" id="ZQv-sO-95q"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-kF-pOV">
-                                <rect key="frame" x="146" y="299" width="97" height="34"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-kF-pOV">
+                                <rect key="frame" x="45" y="323" width="300" height="34"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="H9v-c9-8B5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-rJ-6jt">
-                                <rect key="frame" x="145" y="412" width="100" height="20.333333333333314"/>
+                                <rect key="frame" x="20" y="396" width="350" height="14"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="cbp-sC-3Rw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="pQP-ha-JWJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="15"/>
+                                <color key="textColor" red="0.79123506461731108" green="0.071546677260998517" blue="0.0091171709296587571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-xl-uqe">
-                                <rect key="frame" x="157" y="352" width="74" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A62-Ob-9B8">
+                                <rect key="frame" x="150.66666666666666" y="403" width="89" height="38"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="0.69711522223859745" green="0.23696376879141334" blue="0.91976243257522583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-xl-uqe">
+                                <rect key="frame" x="127.66666666666669" y="460" width="135" height="45"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="confirm"/>
+                                <buttonConfiguration key="configuration" style="filled" title="confirm">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                    <color key="baseForegroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="onConfirmName:" destination="Mnb-wZ-Jci" eventType="touchUpInside" id="6VY-Ul-8Fj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8uA-RY-CYK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.77799902212687577" green="0.80897773457907107" blue="0.87916614250703295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Jgr-FF-Fnz" firstAttribute="top" secondItem="8uA-RY-CYK" secondAttribute="top" constant="137" id="0Wu-DP-7wo"/>
                             <constraint firstItem="B4a-kF-pOV" firstAttribute="top" secondItem="Jgr-FF-Fnz" secondAttribute="bottom" constant="53" id="4rQ-Uw-jlK"/>
+                            <constraint firstItem="T4o-xl-uqe" firstAttribute="top" secondItem="cQM-rJ-6jt" secondAttribute="bottom" constant="50" id="5mH-fp-Frx"/>
+                            <constraint firstItem="6jY-ht-qer" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="8lm-Gq-fGG"/>
+                            <constraint firstItem="T4o-xl-uqe" firstAttribute="top" secondItem="B4a-kF-pOV" secondAttribute="bottom" constant="103" id="9wt-xa-Ybi"/>
                             <constraint firstItem="Jgr-FF-Fnz" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="Kye-GC-Yes"/>
-                            <constraint firstItem="cQM-rJ-6jt" firstAttribute="centerY" secondItem="Rwo-1Z-eSO" secondAttribute="centerY" id="b9p-Ss-4NJ"/>
-                            <constraint firstItem="Jgr-FF-Fnz" firstAttribute="leading" secondItem="8uA-RY-CYK" secondAttribute="leading" constant="131" id="cEN-AA-eCO"/>
+                            <constraint firstItem="A62-Ob-9B8" firstAttribute="centerY" secondItem="Rwo-1Z-eSO" secondAttribute="centerY" id="UZi-sw-i5k"/>
                             <constraint firstItem="Jgr-FF-Fnz" firstAttribute="centerX" secondItem="B4a-kF-pOV" secondAttribute="centerX" id="dvg-Zj-58p"/>
+                            <constraint firstItem="T4o-xl-uqe" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="jxA-Wg-4gk"/>
+                            <constraint firstItem="8uA-RY-CYK" firstAttribute="bottom" secondItem="6jY-ht-qer" secondAttribute="bottom" constant="153" id="m2T-1o-8LS"/>
                             <constraint firstItem="cQM-rJ-6jt" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="pVF-rp-sjd"/>
+                            <constraint firstItem="A62-Ob-9B8" firstAttribute="centerX" secondItem="Rwo-1Z-eSO" secondAttribute="centerX" id="vPP-ht-S1o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Alz-bd-EHo"/>
                     <connections>
                         <outlet property="confirmNameBtn" destination="T4o-xl-uqe" id="1iq-Ly-QIQ"/>
+                        <outlet property="playerName" destination="A62-Ob-9B8" id="DpY-R0-ioQ"/>
                         <outlet property="prompt" destination="cQM-rJ-6jt" id="CaX-Xq-Gka"/>
                         <outlet property="userNameInput" destination="B4a-kF-pOV" id="fjd-3n-Gj8"/>
                         <outlet property="viewScoreBtn" destination="6jY-ht-qer" id="9Tj-Eq-nVt"/>
@@ -271,7 +354,7 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyf-0Z-uKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4590.7692307692305" y="113.74407582938387"/>
+            <point key="canvasLocation" x="4340" y="114"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="2uT-mF-0hU">
@@ -282,62 +365,72 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMG-bm-hRL">
-                                <rect key="frame" x="166.66666666666666" y="245" width="57" height="31"/>
+                                <rect key="frame" x="131" y="319" width="128.33333333333337" height="66"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rock"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Rock">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonPressed:" destination="FG5-nT-QBQ" eventType="touchUpInside" id="e7f-9d-asB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-0i-IB9">
-                                <rect key="frame" x="155.66666666666666" y="427" width="79" height="31"/>
+                                <rect key="frame" x="100.33333333333333" y="571" width="189.33333333333337" height="66"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Scissors"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Scissors">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonPressed:" destination="FG5-nT-QBQ" eventType="touchUpInside" id="DOk-RF-Axb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKB-0u-lmm">
-                                <rect key="frame" x="30" y="74" width="44" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="60.000000000000007" y="194" width="68.666666666666686" height="32.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.6193134539222489" green="0.39688965421819633" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jci-P2-vD4">
-                                <rect key="frame" x="170" y="74" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jci-P2-vD4">
+                                <rect key="frame" x="20" y="84" width="350" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="aIq-V0-YmH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="36"/>
+                                <color key="textColor" red="0.33994215859999999" green="0.38825184470000002" blue="0.60022159360000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xY-ME-Ftl">
-                                <rect key="frame" x="305.33333333333331" y="74" width="54.666666666666686" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="296.33333333333331" y="194" width="63.666666666666686" height="28.333333333333343"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.34085053929999998" green="0.24280740310000001" blue="0.02149081119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNx-nZ-Hqf">
-                                <rect key="frame" x="164" y="336" width="62" height="31"/>
+                                <rect key="frame" x="119.33333333333333" y="445" width="151.33333333333337" height="66"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Paper"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Paper">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonPressed:" destination="FG5-nT-QBQ" eventType="touchUpInside" id="G7r-v9-qnc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IZ9-DC-i5e"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.91996064936161615" green="0.87022523042678068" blue="0.69665520244256185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="iNx-nZ-Hqf" firstAttribute="centerX" secondItem="iDa-oz-7QO" secondAttribute="centerX" id="7mw-4y-jKh"/>
-                            <constraint firstItem="5xY-ME-Ftl" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="30" id="BFd-42-Hi2"/>
-                            <constraint firstItem="SMG-bm-hRL" firstAttribute="top" secondItem="jci-P2-vD4" secondAttribute="bottom" constant="150" id="CAB-Ng-6cj"/>
                             <constraint firstItem="DMo-0i-IB9" firstAttribute="centerX" secondItem="iDa-oz-7QO" secondAttribute="centerX" id="E9A-of-JHN"/>
                             <constraint firstItem="iNx-nZ-Hqf" firstAttribute="top" secondItem="SMG-bm-hRL" secondAttribute="bottom" constant="60" id="Lrs-NY-0j4"/>
                             <constraint firstItem="jci-P2-vD4" firstAttribute="centerX" secondItem="iDa-oz-7QO" secondAttribute="centerX" id="QLm-TK-G6t"/>
-                            <constraint firstItem="VKB-0u-lmm" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="30" id="RnA-48-kxO"/>
-                            <constraint firstItem="jci-P2-vD4" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="30" id="bSN-pf-p8m"/>
+                            <constraint firstItem="jci-P2-vD4" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="40" id="QwW-Gi-Hwg"/>
+                            <constraint firstItem="VKB-0u-lmm" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="150" id="RnA-48-kxO"/>
                             <constraint firstItem="DMo-0i-IB9" firstAttribute="top" secondItem="iNx-nZ-Hqf" secondAttribute="bottom" constant="60" id="hy7-rE-5YH"/>
+                            <constraint firstItem="SMG-bm-hRL" firstAttribute="top" secondItem="jci-P2-vD4" secondAttribute="bottom" constant="190" id="l92-UF-sl7"/>
+                            <constraint firstItem="5xY-ME-Ftl" firstAttribute="top" secondItem="IZ9-DC-i5e" secondAttribute="top" constant="150" id="pll-R1-Q43"/>
                             <constraint firstItem="IZ9-DC-i5e" firstAttribute="trailing" secondItem="5xY-ME-Ftl" secondAttribute="trailing" constant="30" id="rPC-js-oV9"/>
-                            <constraint firstItem="VKB-0u-lmm" firstAttribute="leading" secondItem="IZ9-DC-i5e" secondAttribute="leading" constant="30" id="t6n-NJ-b2S"/>
+                            <constraint firstItem="VKB-0u-lmm" firstAttribute="leading" secondItem="IZ9-DC-i5e" secondAttribute="leading" constant="60" id="t6n-NJ-b2S"/>
                             <constraint firstItem="iNx-nZ-Hqf" firstAttribute="centerX" secondItem="iDa-oz-7QO" secondAttribute="centerX" id="tjA-3A-NqK"/>
                             <constraint firstItem="SMG-bm-hRL" firstAttribute="centerX" secondItem="iDa-oz-7QO" secondAttribute="centerX" id="wvx-Sj-jUT"/>
                         </constraints>
@@ -351,7 +444,7 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7N-dH-KZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937" y="-591"/>
+            <point key="canvasLocation" x="2936.9230769230767" y="-591.46919431279616"/>
         </scene>
         <!--Round Result View Controller-->
         <scene sceneID="aom-Wc-xTF">
@@ -362,22 +455,25 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgO-Ns-3he">
-                                <rect key="frame" x="45" y="278" width="300" height="180"/>
+                                <rect key="frame" x="45" y="258" width="300" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="PgK-nu-nWK"/>
                                     <constraint firstAttribute="width" constant="300" id="cSF-A7-CZc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                                 <color key="textColor" red="0.27734438397667627" green="0.19756832354896686" blue="0.017486713689116452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.77258639870000001" green="0.73454328690000004" blue="0.57947693190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-8B-Q7x">
-                                <rect key="frame" x="160.33333333333334" y="489.33333333333331" width="69.666666666666657" height="41.666666666666686"/>
+                                <rect key="frame" x="95" y="472" width="200" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aCF-i4-Yut"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="-1" height="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                    <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="36"/>
                                     <color key="baseForegroundColor" red="0.109803915" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -386,7 +482,7 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-4y-k8a">
-                                <rect key="frame" x="20" y="188" width="350" height="45"/>
+                                <rect key="frame" x="20" y="168" width="350" height="45"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="0.39359995860927155" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="dYG-Oe-nEG"/>
@@ -402,24 +498,25 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm0-4z-2f1">
-                                <rect key="frame" x="120" y="476" width="150" height="60"/>
+                                <rect key="frame" x="128" y="472" width="150" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6fI-4Y-NGp"/>
+                                    <constraint firstAttribute="height" constant="45" id="6fI-4Y-NGp"/>
                                     <constraint firstAttribute="width" constant="150" id="P5R-DO-19k"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="see score" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                     <color key="baseForegroundColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.10980392156862745" green="0.21568629149999999" blue="0.24313727020000001" alpha="0.81521626655629142" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.7153386261029715" green="0.71211201625229636" blue="0.93330124351713395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="scorePressed:" destination="LwW-xg-XkZ" eventType="touchUpInside" id="qvg-de-KPE"/>
+                                    <segue destination="Mnb-wZ-Jci" kind="show" identifier="toFinalResultSegue" id="ukq-vo-RC5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cEt-NM-CXD"/>
-                        <color key="backgroundColor" red="0.77258639865451395" green="0.73454328693763404" blue="0.57947693185668347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.9199606494" green="0.87022523039999999" blue="0.69665520240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cEt-NM-CXD" firstAttribute="bottom" secondItem="Tm0-4z-2f1" secondAttribute="bottom" constant="230" id="6pU-ov-Vcv"/>
                             <constraint firstItem="HgO-Ns-3he" firstAttribute="top" secondItem="fvv-4y-k8a" secondAttribute="bottom" constant="45" id="7d7-KI-V4J"/>
@@ -427,7 +524,7 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                             <constraint firstItem="cEt-NM-CXD" firstAttribute="bottom" secondItem="bkW-8B-Q7x" secondAttribute="bottom" constant="230" id="QLA-eP-ho0"/>
                             <constraint firstItem="Tm0-4z-2f1" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="RME-R2-WKX"/>
                             <constraint firstItem="bkW-8B-Q7x" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="hKW-hX-Och"/>
-                            <constraint firstItem="fvv-4y-k8a" firstAttribute="top" secondItem="cEt-NM-CXD" secondAttribute="top" constant="100" id="kB3-Nn-s8o"/>
+                            <constraint firstItem="fvv-4y-k8a" firstAttribute="top" secondItem="cEt-NM-CXD" secondAttribute="top" constant="80" id="kB3-Nn-s8o"/>
                             <constraint firstItem="7DY-QB-rph" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="lAG-MA-u3Z"/>
                             <constraint firstItem="fvv-4y-k8a" firstAttribute="centerX" secondItem="9Fg-OQ-AfW" secondAttribute="centerX" id="tJM-HR-GXv"/>
                             <constraint firstItem="7DY-QB-rph" firstAttribute="top" secondItem="Tm0-4z-2f1" secondAttribute="bottom" constant="57" id="zna-Ui-1lH"/>
@@ -440,65 +537,11 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                         <outlet property="resultField" destination="HgO-Ns-3he" id="z44-HJ-MW6"/>
                         <outlet property="roundField" destination="fvv-4y-k8a" id="8TJ-sP-A4O"/>
                         <outlet property="scoreBtn" destination="Tm0-4z-2f1" id="7iS-FM-Yp8"/>
-                        <segue destination="B8S-LG-6Gz" kind="show" identifier="toFinalResultSegue" id="HJS-xi-iMI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snU-8Z-d9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2936.9230769230767" y="113.74407582938387"/>
-        </scene>
-        <!--Final Result View Controller-->
-        <scene sceneID="hch-Z0-ENg">
-            <objects>
-                <viewController id="B8S-LG-6Gz" customClass="FinalResultViewController" customModule="RockPaperScissors4" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zBS-OG-EDK">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVE-nl-EJW">
-                                <rect key="frame" x="122.33333333333333" y="218" width="145.66666666666669" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-Vh-DiU">
-                                <rect key="frame" x="75" y="543" width="91" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play Again"/>
-                                <connections>
-                                    <action selector="againPressed:" destination="B8S-LG-6Gz" eventType="touchUpInside" id="7IM-73-ykn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-zw-Nvs">
-                                <rect key="frame" x="222.33333333333334" y="543" width="92.666666666666657" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Quit Game"/>
-                                <connections>
-                                    <action selector="quitPressed:" destination="B8S-LG-6Gz" eventType="touchUpInside" id="RIw-bm-aht"/>
-                                    <segue destination="Mnb-wZ-Jci" kind="show" id="qvO-AV-hQ9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="38M-oH-6wq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="38M-oH-6wq" firstAttribute="trailing" secondItem="iGr-zw-Nvs" secondAttribute="trailing" constant="75" id="Aa7-iR-dqJ"/>
-                            <constraint firstItem="fI3-Vh-DiU" firstAttribute="leading" secondItem="38M-oH-6wq" secondAttribute="leading" constant="75" id="I83-PM-kaw"/>
-                            <constraint firstItem="38M-oH-6wq" firstAttribute="bottom" secondItem="fI3-Vh-DiU" secondAttribute="bottom" constant="187" id="JIz-2M-JEt"/>
-                            <constraint firstItem="GVE-nl-EJW" firstAttribute="top" secondItem="38M-oH-6wq" secondAttribute="top" constant="130" id="JZ5-rD-Tev"/>
-                            <constraint firstItem="38M-oH-6wq" firstAttribute="bottom" secondItem="iGr-zw-Nvs" secondAttribute="bottom" constant="187" id="i0Z-FW-SuR"/>
-                            <constraint firstItem="GVE-nl-EJW" firstAttribute="centerX" secondItem="zBS-OG-EDK" secondAttribute="centerX" id="lLf-Mb-qBd"/>
-                            <constraint firstItem="iGr-zw-Nvs" firstAttribute="height" secondItem="fI3-Vh-DiU" secondAttribute="height" id="rqc-0q-TgV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="AZS-VS-qX6"/>
-                    <connections>
-                        <outlet property="greeting" destination="GVE-nl-EJW" id="zbN-z4-uql"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o59-j4-qUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3806.1538461538462" y="113.74407582938387"/>
         </scene>
         <!--Home-->
         <scene sceneID="4K4-w5-6LR">
@@ -527,8 +570,13 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="jEU-fZ-VCO">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="AccentColor"/>
+                        <color key="selectedImageTintColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="idx">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="nO4-MS-ilp" kind="relationship" relationship="viewControllers" id="9sx-A6-zi9"/>
                         <segue destination="rQE-9T-JaP" kind="relationship" relationship="viewControllers" id="Zie-lo-RsV"/>
@@ -541,27 +589,15 @@ Rock Paper Scissors is often used as a fair choosing method between two people, 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fKO-3A-2gc"/>
-        <segue reference="GP1-3v-P8o"/>
+        <segue reference="axS-36-yv3"/>
+        <segue reference="Zie-lo-RsV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="crown.fill" catalog="system" width="128" height="92"/>
         <image name="doc.text.magnifyingglass" catalog="system" width="107" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
