@@ -15,6 +15,11 @@ extension UserScore {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<UserScore> {
         return NSFetchRequest<UserScore>(entityName: "UserScore")
     }
+    
+    @nonobjc public class func deleteRequest() -> NSBatchDeleteRequest {
+        let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "UserScore")
+        return NSBatchDeleteRequest(fetchRequest: fetchReq)
+    }
 
     @NSManaged public var losses: Int16
     @NSManaged public var ties: Int16

@@ -52,4 +52,11 @@ class ScoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+    @IBAction func onClickClear(_ sender: Any) {
+        do {
+            try context.execute(UserScore.deleteRequest())
+            getAllScores()
+        } catch {
+        }
+    }
 }

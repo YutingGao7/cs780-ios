@@ -126,13 +126,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-Jz-Krz">
-                                <rect key="frame" x="16" y="144" width="358" height="567"/>
-                                <color key="backgroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="168" width="358" height="493"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.10980392160000001" green="0.21568629149999999" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLG-qL-ple">
-                                <rect key="frame" x="45" y="74" width="300" height="33.666666666666657"/>
+                                <rect key="frame" x="45" y="118.00000000000001" width="300" height="33.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7U4-Ff-2Ez"/>
                                 </constraints>
@@ -140,6 +140,15 @@
                                 <color key="textColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISy-NW-xgK">
+                                <rect key="frame" x="142" y="708" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear Scores"/>
+                                <connections>
+                                    <action selector="onClickClear:" destination="rQE-9T-JaP" eventType="touchUpInside" id="gQD-Je-Oto"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Dj-PL-xNq"/>
                         <color key="backgroundColor" red="0.86422218996262634" green="0.82465822118510013" blue="0.66017095001113679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -148,8 +157,8 @@
                             <constraint firstItem="gLG-qL-ple" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="30" id="RxO-eq-IXI"/>
                             <constraint firstItem="q6o-Jz-Krz" firstAttribute="leading" secondItem="7Dj-PL-xNq" secondAttribute="leading" constant="16" id="SOM-A8-E79"/>
                             <constraint firstItem="7Dj-PL-xNq" firstAttribute="trailing" secondItem="q6o-Jz-Krz" secondAttribute="trailing" constant="16" id="Xs1-UU-r9n"/>
-                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="100" id="ZdS-sj-DM1"/>
-                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="50" id="xLp-FF-WZh"/>
+                            <constraint firstItem="q6o-Jz-Krz" firstAttribute="top" secondItem="7Dj-PL-xNq" secondAttribute="top" constant="80" id="ZdS-sj-DM1"/>
+                            <constraint firstItem="7Dj-PL-xNq" firstAttribute="bottom" secondItem="q6o-Jz-Krz" secondAttribute="bottom" constant="100" id="xLp-FF-WZh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="crown.fill" catalog="system" id="AhO-bw-fcZ"/>
@@ -354,7 +363,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyf-0Z-uKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4340" y="114"/>
+            <point key="canvasLocation" x="4743" y="114"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="2uT-mF-0hU">
@@ -511,7 +520,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="scorePressed:" destination="LwW-xg-XkZ" eventType="touchUpInside" id="qvg-de-KPE"/>
-                                    <segue destination="Mnb-wZ-Jci" kind="show" identifier="toFinalResultSegue" id="ukq-vo-RC5"/>
+                                    <segue destination="M54-Xt-hBa" kind="show" id="ruE-Bn-0bt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -587,10 +596,67 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
             </objects>
             <point key="canvasLocation" x="236.92307692307691" y="113.74407582938387"/>
         </scene>
+        <!--Final Result View Controller-->
+        <scene sceneID="NeW-Jr-aTG">
+            <objects>
+                <viewController id="M54-Xt-hBa" customClass="FinalResultViewController" customModule="RockPaperScissors4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49S-jv-YWj">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="greetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMP-g2-Wbo">
+                                <rect key="frame" x="83.666666666666671" y="138" width="222.66666666666663" height="159"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="47"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI2-VG-vQ3">
+                                <rect key="frame" x="30" y="558.66666666666663" width="141" height="52.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Play Again">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="againPressed:" destination="M54-Xt-hBa" eventType="touchUpInside" id="dlY-qx-YOo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-eV-54B">
+                                <rect key="frame" x="206.33333333333337" y="558.66666666666663" width="153.66666666666663" height="52.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Quit Game">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="quitPressed:" destination="M54-Xt-hBa" eventType="touchUpInside" id="6jS-Fg-9fn"/>
+                                    <segue destination="Mnb-wZ-Jci" kind="show" id="LMY-O6-VRG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aIv-Dc-bes"/>
+                        <color key="backgroundColor" red="0.71325636444720975" green="0.76871567964553833" blue="0.73151937924021526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kI2-VG-vQ3" firstAttribute="leading" secondItem="aIv-Dc-bes" secondAttribute="leading" constant="30" id="4MW-wd-Cvo"/>
+                            <constraint firstItem="aIv-Dc-bes" firstAttribute="bottom" secondItem="fBq-eV-54B" secondAttribute="bottom" constant="150" id="BaU-w1-h6Z"/>
+                            <constraint firstItem="fBq-eV-54B" firstAttribute="height" secondItem="kI2-VG-vQ3" secondAttribute="height" id="Guz-am-1ro"/>
+                            <constraint firstItem="YMP-g2-Wbo" firstAttribute="top" secondItem="aIv-Dc-bes" secondAttribute="top" constant="50" id="N1F-2A-fYQ"/>
+                            <constraint firstItem="aIv-Dc-bes" firstAttribute="bottom" secondItem="kI2-VG-vQ3" secondAttribute="bottom" constant="150" id="ZeR-5o-Otb"/>
+                            <constraint firstItem="YMP-g2-Wbo" firstAttribute="centerX" secondItem="49S-jv-YWj" secondAttribute="centerX" id="nLB-yd-I1i"/>
+                            <constraint firstItem="aIv-Dc-bes" firstAttribute="trailing" secondItem="fBq-eV-54B" secondAttribute="trailing" constant="30" id="oq8-QG-HkJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bC6-Lb-Bqu"/>
+                    <connections>
+                        <outlet property="greeting" destination="YMP-g2-Wbo" id="rMW-Hr-WXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4l-Cs-7yE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3857" y="114"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="axS-36-yv3"/>
-        <segue reference="Zie-lo-RsV"/>
+        <segue reference="lId-pc-Fq8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="crown.fill" catalog="system" width="128" height="92"/>
@@ -598,6 +664,9 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
