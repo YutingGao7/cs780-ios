@@ -57,6 +57,7 @@ class FinalResultViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("notifying delegate")
         delegate?.storeScore()
+        //print("notifying delegate")
     }
     
     override func viewDidLoad() {

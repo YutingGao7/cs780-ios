@@ -89,7 +89,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //print(segue.destination)
         if let finalResultVC = segue.destination as? FinalResultViewController {
-            //finalResultVC.delegate = self
+            finalResultVC.delegate = self
             if(game.getFinalResultInt() == 1) {
                 finalResultVC.greetingText = "Congratulations!"
             }else{
@@ -105,6 +105,7 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         resultField.isHidden = true;
         roundField.isHidden = true;
         scoreBtn.isHidden = true;
+        
     }
     
     func storeScore(){
@@ -112,9 +113,9 @@ class RoundResultViewController: UIViewController, GameViewDelegate, FinalResult
         let newScore = UserScore(context: context)
         var winNum: Int, tieNum: Int, lossNum: Int
         (winNum, tieNum, lossNum) = gameRecording.getUserScores()
-        newScore.wins = Int32(winNum)
-        newScore.ties = Int32(tieNum)
-        newScore.losses = Int32(lossNum)
+        newScore.wins = Int16(winNum)
+        newScore.ties = Int16(tieNum)
+        newScore.losses = Int16(lossNum)
         
         //(newScore.wins, newScore.ties, newScore.losses) = Int32(gameRecording.getUserScores())
         print(gameRecording.getUserScores())
