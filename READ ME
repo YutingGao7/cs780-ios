@@ -1,0 +1,22 @@
+READ ME
+
+"Rock Paper Scissors!" is an ios-based application that fullfills the term-project requirements from SFSU CSC780 solely by Yuting Gao. This application is fully developed on Xcode 13.3.1 and by Swift 5. 
+
+This application follows the MVC design pattern where model is seperated with view and view controller both conceptually and functionally. 
+
+Classes like GameInfo and GameAggregate are used to store and compute the game results, among which the GameAggregate class is responsible for storing and getting data from the Codedata. 
+
+There are altogether 10 view controller classes including the tabbar view controller and the navigation controller. All of them perform the task of prestenting the view. However, there are certain view controllers take more responsibilities on interacting with/ between model and view. 
+
+Some of the APIs that this project has been using include Coredata and AVkit. Coredata serves as the data platform to store the user's game results data. There are 4 attributes altogether stored in Coredata, including Name, Winns, Losses, and Ties. These data could be cleared by the user from a UIButton on the page. 
+
+Anotehr API is AVKit where a bonus video is presented at the end of the help page to show appreciation. Further modification and layout design would be needed. 
+
+The design theme of the app is a cartoonn-style light-hearted family-friendly easy game. So the overall color and tint is designed to be contrast heavily with bright color dominates. The buttons are set to be big and easy for user interaction. 
+
+
+Futrure Work:
+
+Potential future work could be to implement AI into the game so that the virtual opponent now could learn from the user inputs to predict the next step.
+
+
