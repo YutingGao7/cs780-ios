@@ -17,5 +17,6 @@ class ThankYouViewController: UIViewController{
         layer.frame = view.bounds
         view.layer.addSublayer(layer)
         player.play()
+        player.volume = 0.05
     }
 }

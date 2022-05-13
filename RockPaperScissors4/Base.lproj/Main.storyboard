@@ -201,13 +201,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-qm-pTz">
-                                <rect key="frame" x="25" y="113" width="104" height="22"/>
+                                <rect key="frame" x="25" y="103" width="104" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pug-bm-6Qk">
-                                <rect key="frame" x="30" y="145" width="330" height="180"/>
+                                <rect key="frame" x="30" y="135" width="330" height="180"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="Uzx-Qa-5W1"/>
@@ -220,10 +220,10 @@ Originally, Rock Paper Scissors is a hand game originating from China, usually p
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78y-bd-Qs9">
-                                <rect key="frame" x="30" y="392" width="330" height="230"/>
+                                <rect key="frame" x="30" y="382" width="330" height="240"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="UC5-vg-gOt"/>
+                                    <constraint firstAttribute="height" constant="240" id="UC5-vg-gOt"/>
                                 </constraints>
                                 <string key="text">A simultaneous, zero-sum game, it has three possible outcomes: a tie, a win or a loss. If two players have the same choices, then a tie occurs. Otherwise, the general rules are:
 
@@ -231,7 +231,7 @@ Originally, Rock Paper Scissors is a hand game originating from China, usually p
                 Scissors defeats Paper
                 Paper defeats Rock
 
-In this IOS game, the player is playing aganst a randomly generated opponent. If players fail to make decision within 3 seconds, they automatically lost this round.
+In this IOS game, the player is playing aganst a randomly generated opponent in a 3-round game. Who wins more wins this term. If players fail to make decision within 3 seconds, they automatically lost this round.
 </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
@@ -250,7 +250,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-iX-gQS">
-                                <rect key="frame" x="24.999999999999996" y="360" width="43.666666666666657" height="22"/>
+                                <rect key="frame" x="24.999999999999996" y="350" width="43.666666666666657" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -591,6 +591,7 @@ In this IOS game, the player is playing aganst a randomly generated opponent. If
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2B6-Rk-hDH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="jEU-fZ-VCO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="0.10026903973509933" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.80000001190000003" green="0.51372551919999998" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
